@@ -1,0 +1,313 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	margin: '';
+	margin: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #333;
+    --hijau: #185A4F;
+    --kuning: #FDD65B;
+    --coklat: #C0A564;
+    --bg: #f9f5e8;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+*{
+    font-family: 'Montserrat';
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html::-webkit-scrollbar{
+    width:  1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--bg);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--bg);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 1rem 10%;
+}
+
+.aktivitas .heading-title{
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.aktivitas .description{
+    margin: auto;
+    width: 950px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.aktivitas .box-container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-rows: auto;
+    -webkit-column-gap: 100px;
+    -moz-column-gap: 100px;
+    column-gap: 100px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+}
+
+.aktivitas .box-container .box{
+    /* padding: 3rem 2rem; */
+    text-align: center;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 260px;
+    height: 450px;
+
+}
+
+/* .aktivitas .box-container .box:hover{
+    background: var(--hijau);
+    color: var(--white);
+} */
+
+.aktivitas .box-container .box img{
+    margin-bottom: 10px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    height: 170px;
+
+}
+
+.aktivitas .box-container .box h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800; 
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.aktivitas .box-container .box p{
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    width: 92%;
+    /* height: 150px; */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: poppins;
+    font-size: normal;
+    height: 100px;
+}
+
+.aktivitas .box-container .box h4{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    font-size: normal;
+    font-family: poppins;
+}
+
+.aktivitas .box-container .box h5{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 15px; 
+    font-weight: bolder;
+
+}
+
+.aktivitas .box-container .box .progres-bar{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: #185A4F;
+    box-shadow: var(--box-shadow);
+}
+
+.aktivitas .box-container .box .progres-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    color: black;
+    font-weight: 800px;
+    font-size: 14px;
+    /* line-height: 1.7; */
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(76, 175, 80, 1) 50% rgba(50, 222, 132, 1) 100%);
+    transition: widht.5s linear;
+}
+
+
+
+
+@media screen and (max-width: 990px){
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    section{
+        padding: 3rem 2rem;
+    }
+
+    .aktivitas p.description{
+        padding-left: 20px;
+        padding-right: -15px;
+        text-align: center;
+        margin-top: 10px;
+        width: 555px;
+        font-size: 13px;
+    }
+    
+    .aktivitas .box-container{
+        gap: 5rem; 
+        padding-right: 20px;
+    }
+
+    .aktivitas .box-container .box{
+        /* padding: 3rem 2rem; */
+        text-align: left;
+        margin-bottom: 15px;
+        margin-left: 25px;
+        width: 200px;
+        background: var(--white);
+        box-shadow: var(--box-shadow);
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+    
+    }
+
+    .aktivitas .box-container .box img{
+        margin-bottom: 10px;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        width: 100%;
+        box-shadow: var(--box-shadow);
+    
+    }
+    
+    .aktivitas .box-container .box h2{
+        text-align: left;
+        font-size: 18px;
+        font-weight: 800; 
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+    
+    .aktivitas .box-container .box h3{
+        text-align: justify;
+        font-size: 11px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        width: 88%;
+    }
+
+    .aktivitas .box-container .box h4{
+        margin-bottom: 5px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+
+    .aktivitas .box-container .box h5{
+        margin-bottom: 15px;
+        margin-left: 10px;
+        font-size: 10px; 
+        font-weight: bold;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+}

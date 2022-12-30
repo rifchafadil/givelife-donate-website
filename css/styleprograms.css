@@ -1,0 +1,488 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	margin: '';
+	margin: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #333;
+    --hijau: #185A4F;
+    --kuning: #FDD65B;
+    --coklat: #C0A564;
+    --bg: #f9f5e8;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+*{
+    font-family: 'Montserrat';
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html::-webkit-scrollbar{
+    width:  1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--bg);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--bg);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header{
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+    box-shadow: var(--box-shadow);
+}
+
+section{
+    padding: 1rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+.heading-title{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+/* berita */
+.berita .container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 6fr));
+    grid-template-rows: auto;
+    -webkit-column-gap: 100px; /* Chrome, Safari, Opera */
+	-moz-column-gap: 100px; /* Firefox */
+	column-gap: 100px;
+    row-gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    text-decoration: none;
+    color: #666666;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    display: relative;
+    flex-direction: column;
+    min-height: 100%;
+    position: relative;
+    top: 0;
+    transition: all 0.2s ease-in;
+    border-radius: 7px;
+    width: 100%;
+    height: 450px;
+}
+
+.card:hover {
+    top: -2px;
+    box-shadow: var(--box-shadow);
+}
+
+.card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card article {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Poppins;
+
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 0;
+    color: black;
+}
+
+.card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #185a4f;
+    text-align: right;
+    text-decoration: underline;
+    font-family: Montserrat;
+    cursor: pointer;
+    transition: 0.4s ease;
+    padding-top: 10px;
+}
+
+.card p {
+    flex: 1;
+    font-size: 12px;
+    font-weight: 450;
+    line-height: 1.5;
+    text-align: justify;
+    font-family: poppins;
+    font-size: normal;
+    padding-top: 10px;
+  
+}
+/* our programs */
+
+.aktivitas .box-container{
+    padding-top: 4rem;
+    align-items: center;
+    display: flex;
+    grid-gap: 50px;
+    row-gap: 50px;
+    position: relative;
+    width: 1000px;
+    margin-bottom: 3rem;
+    /* background-color: black; */
+}
+
+.aktivitas .box-container .box{
+    /* padding: 3rem 2rem; */
+    text-align: center;
+    background: var(--white);
+    box-shadow: 5px 5px 5px 0px #00000040;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    transition: all 0.2s ease-in;
+}
+
+.aktivitas .box-container .box:hover {
+    top: -2px;
+    box-shadow: var(--box-shadow);
+}
+
+.aktivitas .box-container .box img{
+    margin-bottom: 10px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    
+}
+
+
+.aktivitas .box-container .box h2{
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800; 
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+/* .aktivitas .box-container .box .progres-bar{
+    position: relative;
+    align-items: center;
+    margin: auto;
+    width: 250px;
+    height: 15px;
+    border-radius: 30px;
+    background-color: var(--hijau);
+    box-shadow: var(--box-shadow)
+} */
+
+/* .aktivitas .box-container .box .progres-bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 100%;
+    color: black;
+    font-weight: 800px;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgb(76, 175, 80, 1) 50% rgba(50, 222, 132, 1) 100%);
+    transition: widht.5s linear;
+    font-family: Montserrat;
+} */
+
+.aktivitas .box-container .box svg{
+   justify-content: center;
+   align-items: center;
+   margin-left: 5px;
+   box-shadow: var(--box-shadow);
+}
+
+.aktivitas .box-container .box .span-tersisa p{
+    text-align: right;
+    margin-right: 30px;
+    color: black;
+    font-weight: 50px;
+    margin-top: 10px;
+    font-size: 12px; 
+}
+
+
+.aktivitas .box-container .box h5{
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 15px; 
+    font-weight: bold;
+}
+
+.aktivitas .box-container .content-part{
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: poppins ;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+.aktivitas .box-container .content-part h3{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-align: justify;
+    align-items: left;
+    /* padding-left: 75px; */
+    /* padding-right: 75px; */
+    
+}
+
+.aktivitas .box-container .content-part p{
+    font-size: 14px;
+    font-weight: 300;
+    /* margin-bottom: 10px; */
+    line-height: 20px;
+    text-align: justify;
+    font-family: poppins;
+}
+
+.button {
+    font-family: montserrat;
+    font-size: 13px;
+    background: #c0a564;
+    color: white;
+    border: white 3px solid;
+    border-radius: 25px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+  /* laporan */
+.visi{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-radius: 25px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px; */
+
+}
+
+.visi .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); 
+    gap: 1.5rem;
+    /* margin-top: 5rem;
+    margin-bottom: 5rem; */
+}
+
+.visi .box-container .box{
+    padding: 3rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    /* height: 250px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.visi .box-container .box img{
+    height: 100px;
+    /* position: absolute; */
+
+}
+
+.visi .box-container .box h2{
+    /* margin-top: -22px; */
+    /* margin-left: 70px;
+    margin-right: 70px; */
+    /* margin-left: 80px; */
+    position: absolute;
+    color: var(--black);
+    font-size: 15px;
+    padding-top: 1rem;
+    align-items: center;
+    width: 100px;
+    margin-left: 45px;
+    margin-top: -33px;
+}
+
+/* .visi .box-container .box h2.donasi{
+    margin-left: 70px;
+}
+
+.visi .box-container .box h2.galang_dana{
+        margin-left:72px;
+
+    }
+
+.visi .box-container .box h2.donatur{
+    margin-left: 74px;
+} */
+
+.visi .box-container .box h3{
+    color: var(--white);
+    font-size: 15px;
+    padding-top: 1rem;
+
+}
+
+
+/* media queries */
+@media (max-width:1200px){
+    section{
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        column-gap: 50px;
+    }
+
+    .card {
+        width: 300px;
+    }
+    
+    .visi{
+        margin-top: 7rem;
+        margin-bottom: 5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        border-radius: 25px;
+    }
+    
+    .visi .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr)); 
+    }
+
+    .visi .box-container .box img{
+        height: 50px;
+    }
+
+    /* .visi .box-container .box h2{
+        background-color: yellow;
+        margin-right: 100px;
+    } */
+}
+
+@media (max-width:768px){
+
+
+    
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 45%;
+    }
+}

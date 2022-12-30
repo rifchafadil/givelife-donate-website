@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Montserrat;
+    background-color: #F9F5E8;
+}
+
+/* body {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-direction: column;
+} */
+
+.container {
+    width: 100%;   
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* background-color:# */
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: left; */
+    /* background-color: #; */
+
+}
+
+/* .container {
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    margin-inline: auto;
+} */
+
+/* .login {
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F5E8;
+    align-items: center;
+} */
+
+.login .box-login {
+    display: flex;
+}
+
+.login .box-login .box:nth-child(1) h1 {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.login .box-login .box input {
+    position: relative;
+    width: 75%;
+    color: #0d3e6a;
+    padding-top: 5px;
+    padding-right: 50px;
+    margin: 8px 0 15px 0;
+    border: none;
+    outline: none;
+    background-color: #F9F5E8;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+label {
+    font-size: 14px;
+    letter-spacing: 5.5%;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.form-submit {
+    background: #C0A564;
+    border: none;
+    border-radius: 30px;
+    color: #FFFFFF;
+    padding: 7px 20px;
+    font-size: 14px;
+    font-family: inherit;
+    margin-top: 15px;
+    /* margin-left: 50px; */
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    cursor: pointer;
+    transition: transform 80ms ease-in;
+    box-shadow: 0px 10px 10px 0px #00000040;
+}
+
+.form-submit:hover {
+    background: #C0A564;
+    transform: scale(1.1);
+}
+
+.login .box-login .box:nth-child(2) img {
+    width: 350px;
+    padding-top: 80px;
+    /* padding-left: 50px; */
+    /* box-shadow: 0px 10px 10px 0px #00000040; */
+}
+

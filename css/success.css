@@ -1,0 +1,145 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	margin: '';
+	margin: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #333;
+    --hijau: #185A4F;
+    --kuning: #FDD65B;
+    --coklat: #C0A564;
+    --bg: #f9f5e8;
+    --border: .2rem solid rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+
+}
+
+*{
+    font-family: 'Montserrat';
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html::-webkit-scrollbar{
+    width:  1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: var(--bg);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: var(--bg);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.header{
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+    box-shadow: var(--box-shadow);
+}
+
+section{
+    padding: 1rem 10%;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+
+/* .donate{
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+} */
+
+.donation {
+   padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 65rem !important;
+    background-position: center !important;
+    min-height: 65rem;
+}
+
+.link-btn{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 30rem;
+    background-color: var(--coklat);
+    align-items: center;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-family: Montserrat;
+}
+
+.link-btn:hover{
+    background-color: var(--coklat);
+    transform: scale(1.1);
+}
